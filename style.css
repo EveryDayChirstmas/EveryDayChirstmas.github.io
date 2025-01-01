@@ -1,1 +1,59 @@
 
+/* General Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  margin-top: 60px; /* Offset for fixed nav */
+}
+
+#home {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+#biography, #education, #projects, #contact {
+  background: #ddd;
+  border-top: 1px solid #bbb;
+}
+
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
